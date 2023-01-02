@@ -15,7 +15,7 @@ spring:
     testWhileIdle: true
     validationQuery: SELECT 1
     username: postgres
-    password: ${POSTGRES_PASS}
+    password: pgpassword
   application:
     name: licensing-service
 
@@ -59,7 +59,5 @@ resilience4j.circuitbreaker:
       eventConsumerBufferSize: 10
       ringBufferSizeInClosedState: 5
       ringBufferSizeInHalfOpenState: 3
-
-logging:
-  level:
-    org.neat0n: info
+server:
+  port: 8008

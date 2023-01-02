@@ -11,11 +11,11 @@ spring:
   datasource:
     platform: postgres
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/demo
+    url: jdbc:postgresql://localhost:5433/demo
     testWhileIdle: true
     validationQuery: SELECT 1
     username: postgres
-    password: ${POSTGRES_PASS}
+    password: pgpassword
   application:
     name: licensing-service
 
